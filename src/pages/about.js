@@ -1,7 +1,15 @@
 import * as React from 'react';
+import { Link } from 'gatsby';
+import Layout from '../components/layout.js';
 
 export default function AboutPage() {
-  return <main>
-      <h1>About This Site</h1>
-  </main>;
+  return (
+    <Layout
+      title="About This Site"
+      description="More infomation about this site."
+    >
+        <h1>About This Site</h1>
+        <Link to="/">Go Home</Link>
+    </Layout>
+  );
 }
